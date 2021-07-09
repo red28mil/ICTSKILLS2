@@ -9,3 +9,4 @@ export default {
 export const Basic = () => {
   return <CourseModulesStatic />  ;
 };
+
