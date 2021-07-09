@@ -1,18 +1,47 @@
 import React from "react";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 const Demo = () => {
-  const languages = ["Go", "Julia", "Kotlin"];
-  const header = "Modern";
+
+  const course = "MSc Computing - Modules table.";
+  const modules = [
+    {
+      name: "DevOps",
+      noLectures: 2,
+      noPracticals: 3
+    },
+    {
+      name: "Enterprise Web Dev",
+      noLectures: 3,
+      noPracticals: 2
+    }
+  ];
   return (
-    <div> 
-      <h1>{`${header} Languages`}</h1>
-      <ul>
-        <li>{languages[0]}</li>
-        <li>{languages[1]} </li>
-        <li>{languages[2]} </li>
-      </ul>
+    <div>
+      <h2>{course}</h2>
+      <table className="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>No lectures</th>
+            <th>No practicals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{modules[0].name}</td>
+            <td>{modules[0].noLectures}</td>
+            <td>{modules[0].noPracticals}</td>
+          </tr>
+          <tr>
+            <td>{modules[1].name}</td>
+            <td>{modules[1].noLectures}</td>
+            <td>{modules[1].noPracticals}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };
 
-export default Demo
+export default Demo;
