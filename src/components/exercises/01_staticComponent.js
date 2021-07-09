@@ -4,7 +4,7 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 const Demo = () => {
   return (
     <div>
-      <h1>Hdip Computer Science</h1>
+      <h1>Hdip Computer Science!</h1>
   <table clssName="table table-bordered">
   <thead>
     <tr>
